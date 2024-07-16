@@ -1,0 +1,23 @@
+{
+  "name": "2-project",
+  "version": "1.0.0",
+  "description": "bootcamp api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "SET NODE_ENV=PRODUCTION & node server.js ",
+    "dev" : "nodemon server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "backend",
+    "web-developemt"
+  ],
+  "author": "Ameya Belvalkar",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
