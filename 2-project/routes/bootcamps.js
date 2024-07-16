@@ -6,7 +6,8 @@ router.get("/bootcamps", (req, res) => {
 })
 
 router.get("/bootcamps/:id", (req, res) => {
-    res.status(200).json({ success: true, message: "Get Single Bootcamp" })
+    let id = req.params.id
+    res.status(200).json({ success: true, message: `Bootcamp With ${id} Fetched`})
 })
 
 router.post("/bootcamps", (req, res) => {
@@ -14,11 +15,13 @@ router.post("/bootcamps", (req, res) => {
 })
 
 router.put("/bootcamps/:id", (req, res) => {
-    res.status(200).json({ success: true, message: "Updating One Bootcamp" })
+    let id = req.params.id
+    res.status(200).json({ success: true, message: `Bootcamp With ${id} Updated`})
 })
 
 router.delete("/bootcamps/:id", (req, res) => {
-    res.status(200).json({ success: true, message: "Deleting Single Bootcamp" })
+    let id = req.params.id
+    res.status(200).json({ success: true, message: `Bootcamp With ${id} Deleted`})
 })
 
 

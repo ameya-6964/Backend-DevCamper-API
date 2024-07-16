@@ -1,6 +1,6 @@
 require("dotenv").config({path:"./config/.env"})
 const express = require("express");
-const bootcampRoutes = require("./routes/bootcampRoutes")
+const bootcampRoutes = require("./routes/bootcamps")
 
 const app = express();
 const PORT = process.env.PORT || 5000;
