@@ -7,7 +7,7 @@ exports.getBootcamps = (req, res) => {
 
 //  @desc    GET SINGLE BOOTCAMP
 //  @route   GET /api/v1/bootcamps/:id
-exports.getSingleBootcamp = (req, res) => {
+exports.getBootcamp = (req, res) => {
     let id = req.params.id
     res.status(200).json({ success: true, message: `Bootcamp With ${id} Fetched`})
 }
